@@ -4,7 +4,15 @@ let productDesktop = document.querySelector('.productDesktop');
 let productContainer = document.querySelector('.productContainer');
 let connectDesktop = document.querySelector('.connectDesktop');
 let connectContainer = document.querySelector('.connectContainer');
-
+let mobileIcon = document.querySelector('.mobileIcon');
+let mobileMenuContainer = document.querySelector('.mobileMenuContainer');
+mobileIcon.addEventListener('click', () => {
+    if (mobileMenuContainer.classList.contains('hide')) {
+        mobileMenuContainer.classList.remove('hide');
+    } else {
+        mobileMenuContainer.classList.add('hide');
+    }
+})
 companyDesktop.addEventListener('click', () => {
     productContainer.classList.add('hide');
     connectContainer.classList.add('hide');

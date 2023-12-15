@@ -185,6 +185,46 @@ footer h3 {
 .desktop {
     display: none;
 }
+.mobileMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 90%;
+    top: 100px;
+    left: 50%;
+    padding: 40px 20px;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+.mobileMenuContainer span {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(240, 10%, 16%);
+}
+hr {
+    height: 2px;
+    width: 100%;
+    margin: 20px 0px;
+}
+.loginMenu {
+    color: hsl(240, 10%, 16%);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+}
+.whiteMenu {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to right,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
 .hide {
     display: none;
 }
