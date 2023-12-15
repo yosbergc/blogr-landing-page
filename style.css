@@ -56,6 +56,7 @@ header {
     border-radius: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
+    border: 1px solid white;
 }
 .line {
     text-decoration: none;
@@ -181,6 +182,9 @@ footer h3 {
 .product, .company, .Connect {
     margin: 20px 0px;
 }
+.desktop {
+    display: none;
+}
 @media (min-width: 1280px) {
     .hero-section h1 {
         font-size: 60px;
@@ -189,7 +193,7 @@ footer h3 {
         font-size: 20px;
     }
     .white, .line {
-        font-size: 18px;
+        font-size: 15px;
     }
     .designed {
         padding: 50px 0px;
@@ -280,5 +284,55 @@ footer h3 {
     }
     .product h3, .Company h3, .Connect h3 {
         text-align: left;
+    }
+    .white {
+        transition: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+    .white:hover {
+        background: none;
+        color: white;
+        border: 1px solid white;
+    }
+    .line {
+        transition: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+    .line:hover {
+        background-color: white;
+        color: #ff525d;
+    }
+    .mobileMenu {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 40px;
+    }
+    .desktopMenu {
+        display: flex;
+        gap: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(0, 0%, 100%);
+    }
+    .login {
+        color: white;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+    .buttons {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .buttons .white {
+        padding: 12px 30px;
+    }
+    .productDesktop:hover, .companyDesktop:hover, .connectDesktop:hover {
+        cursor: pointer;
     }
 }
